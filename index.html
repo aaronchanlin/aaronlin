@@ -147,7 +147,7 @@ if($_POST["message"]) {
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>Send me a message on here! Or you can find me all over the internet in other social media outlets.</p>
-							<form method="post" action="https://script.google.com/macros/s/AKfycbyR-XSNw6Dwz1qyfh4cfppRamWPbwj0zZGgtdJykA3OUQ4tqqY/exec">
+							<form id="gform" form method="POST" action="https://script.google.com/macros/s/AKfycbyR-XSNw6Dwz1qyfh4cfppRamWPbwj0zZGgtdJykA3OUQ4tqqY/exec">
 								<div class="field">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" />
@@ -196,6 +196,8 @@ if($_POST["message"]) {
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+      <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
 	</body>
 </html>
